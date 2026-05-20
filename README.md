@@ -1,68 +1,19 @@
-<img src="https://github.com/user-attachments/assets/7c621714-ee04-443a-bb0b-b76cabb5b4a5" alt="image" style="width:18%;">
+# LRC-Net: Deep LUT-based Logic Networks with Local Random Connectivity and Identity-Mapping Initialization
+<img width="858" height="377" alt="image" src="https://github.com/user-attachments/assets/49e40f6c-614c-426e-8179-868cb3350474" />
 
-# LLNN: A Scalable LUT-Based Logic Neural Network Architecture for FPGAs
+## LOCAL RANDOM CONNECTIVITY (LRC)
+The core of LRC is to inject a convolutional-like spatial inductive bias into logic networks.
+<img width="342" height="149" alt="image" src="https://github.com/user-attachments/assets/2fbe5ab6-1add-4ab2-8dca-ebb88a1c88ef" />
 
-![model_comparison_avg-1](https://github.com/user-attachments/assets/59340012-51a4-49fc-b311-68f6f33bbc87)
+## IMI
+By preventing vanishing gradients, IMI enables logic-based models to achieve greater depth and better scalability.
+<img width="528" height="326" alt="image" src="https://github.com/user-attachments/assets/29c1d354-b066-42fe-9d0b-ff90789b0f4b" />
 
-This repository implements Look-Up Tables Logic Neural Networks (LLNNs) presented in:
-
-
-[LLNN: A Scalable LUT-Based Logic Neural Network Architecture for FPGAs](https://ieeexplore.ieee.org/abstract/document/11154450)
-
-![g_abstract](https://github.com/user-attachments/assets/1f85e6a0-8a10-417d-bc6e-a6e793369c41)
-
-## 📖 Citing
-
-If you use this work, please cite the following paper:
-
-```bibtex
-@ARTICLE{11154450,
-  author={Ramírez, Iván and Garcia-Espinosa, Francisco J. and Concha, David and Aranda, Luis Alberto and Schiavi, Emanuele},
-  journal={IEEE Transactions on Circuits and Systems I: Regular Papers}, 
-  title={LLNN: A Scalable LUT-Based Logic Neural Network Architecture for FPGAs}, 
-  year={2025},
-  volume={},
-  number={},
-  pages={1-13},
-  keywords={Logic gates;Field programmable gate arrays;Biological neural networks;Table lookup;Hardware;Computer architecture;Training;Neurons;Logic;Complexity theory;Logic neural networks;LUT-based neural networks;FPGA implementation;scalability in hardware neural networks;real-time inference},
-  doi={10.1109/TCSI.2025.3606054}
-}
-```
-
-## Installation
-`pip install llnn`
-
-## Importing LUTLayer
-
-```python
-import torch
-from llnn.lutlayer import LUTLayer, Aggregation
-
-model = torch.nn.Sequential(
-    torch.nn.Flatten(),
-    LUTLayer(input_dim=1000, lut_size=6, n_luts=2048),
-    LUTLayer(input_dim=2048, lut_size=6, n_luts=4000),
-    Aggregation(num_classes=10, tau=10)
-)
-```
-
-## Train a model
-
-`python main.py --train --save --name model1 --dataset mnist --batch-size 128 -lr 0.01 --num-iterations 10000`
-
-## Test a trained model
-
-`python main.py --load --name model1 --dataset mnist`
+## Test accuracy convergence curves
+### cifar10
+<img width="260" height="208" alt="image" src="https://github.com/user-attachments/assets/689e4cab-ff55-4333-856d-75fa87c7523a" />
+### mnist
+<img width="263" height="210" alt="image" src="https://github.com/user-attachments/assets/39e9e26b-80ef-473c-865a-5a73a1ea292d" />
 
 
-# VHDL
 
-![Toolflow 1](https://github.com/user-attachments/assets/2e751f7c-c13d-48fd-9776-e09ff8ce25f3)
-
-## HDL code generation example
-
-` python hdl/vhdl/convert2vhdl.py --model model1`
-
-## LLNN Testbench
- 
-We offer a testbench in VHDL code to test a trained MNIST network and additional utility functions to convert the MNIST dataset into binary inputs for hardware validation in simulation.
