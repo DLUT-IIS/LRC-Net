@@ -51,7 +51,7 @@ The following figures show the test accuracy convergence curves of LRC-Net on be
 ---
 
 ## 📚 REFERENCES
-[1]	Ramírez I, Garcia-Espinosa F J, Concha D, et al. LLNN: A Scalable LUT-Based Logic Neural Network Architecture for FPGAs[J]. IEEE Transactions on Circuits and Systems I: Regular Papers, 2025.
-[2] Ramírez I, Garcia-Espinosa F J, Concha D, et al. Logic neural networks for efficient FPGA implementation[J]. IEEE Transactions on Circuits and Systems I: Regular Papers, 2024, 72(7): 3390-3398.
-[3] Petersen F, Borgelt C, Kuehne H, et al. Deep differentiable logic gate networks[J]. Advances in Neural Information Processing Systems, 2022, 35: 2006-2018.
+- [1]	Ramírez I, Garcia-Espinosa F J, Concha D, et al. LLNN: A Scalable LUT-Based Logic Neural Network Architecture for FPGAs[J]. IEEE Transactions on Circuits and Systems I: Regular Papers, 2025.
+- [2] Ramírez I, Garcia-Espinosa F J, Concha D, et al. Logic neural networks for efficient FPGA implementation[J]. IEEE Transactions on Circuits and Systems I: Regular Papers, 2024, 72(7): 3390-3398.
+- [3] Petersen F, Borgelt C, Kuehne H, et al. Deep differentiable logic gate networks[J]. Advances in Neural Information Processing Systems, 2022, 35: 2006-2018.
 
