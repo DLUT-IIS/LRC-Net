@@ -1,7 +1,7 @@
 # LRC-Net: Deep LUT-based Logic Networks with Local Random Connectivity and Identity-Mapping Initialization
 
 <p align="center">
-  <img width="500" height="400" alt="LRC-Net Overview" src="https://github.com/user-attachments/assets/49e40f6c-614c-426e-8179-868cb3350474" />
+  <img width="688" height="304" alt="image" src="https://github.com/user-attachments/assets/05247f11-ea0f-4ebf-b5a9-2aff8fac170f" />
 </p>
 
 ## 📌 Overview
@@ -23,19 +23,7 @@ The core idea of **Local Random Connectivity (LRC)** is to introduce a convoluti
 Instead of fully random global connections, LRC restricts the input connections of each LUT neuron to a local spatial region. This design helps the network better capture local patterns in images while maintaining the hardware-friendly characteristics of LUT-based logic computation.
 
 <p align="center">
-  <img width="500" height="400" alt="Local Random Connectivity" src="https://github.com/user-attachments/assets/2fbe5ab6-1add-4ab2-8dca-ebb88a1c88ef" />
-</p>
-
----
-
-## 🧩 Identity-Mapping Initialization (IMI)
-
-**Identity-Mapping Initialization (IMI)** is introduced to improve the optimization of deep logic networks.
-
-By preserving information flow across layers, IMI helps prevent vanishing gradients during training. This makes it possible for logic-based models to scale to greater depths and achieve better performance.
-
-<p align="center">
-  <img width="500" height="400" alt="Identity-Mapping Initialization" src="https://github.com/user-attachments/assets/29c1d354-b066-42fe-9d0b-ff90789b0f4b" />
+  <img width="687" height="298" alt="image" src="https://github.com/user-attachments/assets/ef13ffb3-0755-4c84-b794-527bb5f2b728" />
 </p>
 
 ---
@@ -44,18 +32,12 @@ By preserving information flow across layers, IMI helps prevent vanishing gradie
 
 The following figures show the test accuracy convergence curves of LRC-Net on benchmark datasets.
 
-### CIFAR-10
+### CIFAR-10 and MNIST
 
 <p align="center">
-  <img width="500" height="400" alt="CIFAR-10 Accuracy Curve" src="https://github.com/user-attachments/assets/689e4cab-ff55-4333-856d-75fa87c7523a" />
+  <img width="400" height="302" alt="image" src="https://github.com/user-attachments/assets/62e9d7ae-b1d2-49ad-bfa0-e569fa779d54" /> <img width="399" height="303" alt="image" src="https://github.com/user-attachments/assets/88ad6cd1-9aa5-447b-aed8-684a1a297cd8" />
+
 </p>
-
-### MNIST
-
-<p align="center">
-  <img width="500" height="400" alt="MNIST Accuracy Curve" src="https://github.com/user-attachments/assets/39e9e26b-80ef-473c-865a-5a73a1ea292d" />
-</p>
-
 ---
 
 ## ✨ Key Features
@@ -68,14 +50,8 @@ The following figures show the test accuracy convergence curves of LRC-Net on be
 
 ---
 
-## 📚 Citation
+## 📚 REFERENCES
+[1]	Ramírez I, Garcia-Espinosa F J, Concha D, et al. LLNN: A Scalable LUT-Based Logic Neural Network Architecture for FPGAs[J]. IEEE Transactions on Circuits and Systems I: Regular Papers, 2025.
+[2] Ramírez I, Garcia-Espinosa F J, Concha D, et al. Logic neural networks for efficient FPGA implementation[J]. IEEE Transactions on Circuits and Systems I: Regular Papers, 2024, 72(7): 3390-3398.
+[3] Petersen F, Borgelt C, Kuehne H, et al. Deep differentiable logic gate networks[J]. Advances in Neural Information Processing Systems, 2022, 35: 2006-2018.
 
-If this project is useful for your research, please consider citing or starring this repository.
-
-```bibtex
-@article{lrcnet,
-  title={LRC-Net: Deep LUT-based Logic Networks with Local Random Connectivity and Identity-Mapping Initialization},
-  author={Your Name},
-  journal={},
-  year={}
-}
