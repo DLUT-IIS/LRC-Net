@@ -1,7 +1,7 @@
 # LRC-Net: Deep LUT-based Logic Networks with Local Random Connectivity and Identity-Mapping Initialization
 
 <p align="center">
-  <img width="688" height="304" alt="image" src="https://github.com/user-attachments/assets/05247f11-ea0f-4ebf-b5a9-2aff8fac170f" />
+  <img width="1128" height="831" alt="image" src="https://github.com/user-attachments/assets/9e3c2649-2bb6-4d7d-86d4-b7dc2414fed2" />
 </p>
 
 ## 📌 Overview
