@@ -35,8 +35,8 @@ The following figures show the test accuracy convergence curves of LRC-Net on be
 ### CIFAR-10 and MNIST
 
 <p align="center">
-  <img width="259" height="178" alt="image" src="https://github.com/user-attachments/assets/7091c96e-6ab0-40cb-8b14-825034816f2e" />
-  <img width="263" height="176" alt="image" src="https://github.com/user-attachments/assets/e7654e01-8611-438d-845a-bb0da718ec87" />
+  <img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/7091c96e-6ab0-40cb-8b14-825034816f2e" /> 
+  <img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/e7654e01-8611-438d-845a-bb0da718ec87" />
 </p>
 ---
 
@@ -44,7 +44,7 @@ The following figures show the test accuracy convergence curves of LRC-Net on be
 
 - Deep LUT-based logic network architecture.
 - Local random connectivity for image-structured input.
-- Identity-mapping initialization for stable deep training.
+- Logic buffer initialization for stable deep training.
 - Improved convergence behavior on image classification tasks.
 - Hardware-friendly design suitable for LUT-based acceleration.
 
