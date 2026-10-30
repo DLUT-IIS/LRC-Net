@@ -1,4 +1,4 @@
-# LRC-Net: Deep LUT-based Logic Networks with Local Random Connectivity and Identity-Mapping Initialization
+# LRC-Net: Local Random Connectivity and Logic-Buffer Initialization for Deep LUT-Based Logic Neural Networks
 
 <p align="center">
   <img width="1128" height="831" alt="image" src="https://github.com/user-attachments/assets/9e3c2649-2bb6-4d7d-86d4-b7dc2414fed2" />
@@ -10,9 +10,9 @@
 The proposed method introduces two key techniques:
 
 - **Local Random Connectivity (LRC)**: injects convolution-like spatial inductive bias into LUT-based logic networks.
-- **Identity-Mapping Initialization (IMI)**: alleviates gradient vanishing and enables deeper logic-based architectures.
+- **Logic-buffer initialization (LBI)**: alleviates gradient vanishing and enables deeper logic-based architectures.
 
-Together, LRC and IMI allow LUT-based networks to achieve better accuracy, faster convergence, and improved depth scalability on image classification tasks.
+Together, LRC and LBI allow LUT-based networks to achieve better accuracy, faster convergence, and improved depth scalability on image classification tasks.
 
 ---
 
@@ -23,7 +23,7 @@ The core idea of **Local Random Connectivity (LRC)** is to introduce a convoluti
 Instead of fully random global connections, LRC restricts the input connections of each LUT neuron to a local spatial region. This design helps the network better capture local patterns in images while maintaining the hardware-friendly characteristics of LUT-based logic computation.
 
 <p align="center">
-  <img width="687" height="298" alt="image" src="https://github.com/user-attachments/assets/ef13ffb3-0755-4c84-b794-527bb5f2b728" />
+  <img width="1167" height="537" alt="image" src="https://github.com/user-attachments/assets/f0e131c1-bc59-4f2f-af0b-81be43f60ea8" />
 </p>
 
 ---
@@ -35,8 +35,8 @@ The following figures show the test accuracy convergence curves of LRC-Net on be
 ### CIFAR-10 and MNIST
 
 <p align="center">
-  <img width="400" height="302" alt="image" src="https://github.com/user-attachments/assets/62e9d7ae-b1d2-49ad-bfa0-e569fa779d54" /> <img width="399" height="303" alt="image" src="https://github.com/user-attachments/assets/88ad6cd1-9aa5-447b-aed8-684a1a297cd8" />
-
+  <img width="259" height="178" alt="image" src="https://github.com/user-attachments/assets/7091c96e-6ab0-40cb-8b14-825034816f2e" />
+  <img width="263" height="176" alt="image" src="https://github.com/user-attachments/assets/e7654e01-8611-438d-845a-bb0da718ec87" />
 </p>
 ---
 
